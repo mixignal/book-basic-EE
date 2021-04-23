@@ -1,8 +1,12 @@
 Hi,
 
 This is the repo for the book on review of basic electrical engineering principles mostly for Integrated Circuit & Electronic System designers. This book follows Tufte-style typesetting from Edward Tufte's books.  This repo is forked from the Tufte LaTeX package at https://github.com/Tufte-LaTeX/tufte-latex.
-###
-Content scrapbook.
+### Self-publish
+- Edward Tufte's [Book design thread](https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB) has some great stuff on typograhy and book design. A must checkout.
+- [Ask ET Forum](https://www.edwardtufte.com/bboard/) is the general forum with all questions.
+- Robert Ghirst on [self-publishing on Amazon](https://www2.math.upenn.edu/~ghrist/whyselfpublish.html) is a must read as well.
+
+### content scratch.
 - Math
   - Algebra (Feynman's lecture)
   - Art of appoximation (Sanjoy Mahajan)
@@ -10,7 +14,10 @@ Content scrapbook.
   - Complex number (Feynman's lecture, 1,2,3.. Infity)
   - Vector Calc (feynman)
   - Calculus (Robert Ghrist, UPenn)
+=======
+  - Vector Calc (Feynman's lectures and Ghrist)
   - Linear Algebra (Strang, UPenn lecture)
+  - Calculus ([Robert Ghrist's](https://www2.math.upenn.edu/~ghrist/) Youtube lectures, Strang OCW)
   - Diff equations.
 - Electromagnetics
   - Feynman lecture
