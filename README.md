@@ -1,4 +1,11 @@
-Hi,
+:exclamation::exclamation: ** TRY DOING ALL EDITS IN OVERLEAF and SYNC GITHUB and GIT FROM IT **:exclamation::exclamation:
+
+:exclamation: OVERLEAF Project: papilio-blue :exclamation:
+
+- [Bsic Markdown syntax](https://www.markdownguide.org/basic-syntax)
+- [Bsic Markdown syntax](https://www.markdownguide.org/extended-syntax)
+- [List of Emojis](https://gist.github.com/rxaviers/7360908)
+
 
 This is the repo for the book on review of basic electrical engineering principles mostly for Integrated Circuit & Electronic System designers. This book follows Tufte-style typesetting from Edward Tufte's books.  This repo is forked from the Tufte LaTeX package at https://github.com/Tufte-LaTeX/tufte-latex.
 
