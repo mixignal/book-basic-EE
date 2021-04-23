@@ -12,6 +12,9 @@ This is the repo for the book on review of basic electrical engineering principl
   - Art of appoximation (Sanjoy Mahajan)
   - What's an imaginary number (Feynman's lecture and 1,2,3 infinity)
   - Complex number (Feynman's lecture, 1,2,3.. Infity)
+  - Vector Calc (feynman)
+  - Calculus (Robert Ghrist, UPenn)
+=======
   - Vector Calc (Feynman's lectures and Ghrist)
   - Linear Algebra (Strang, UPenn lecture)
   - Calculus ([Robert Ghrist's](https://www2.math.upenn.edu/~ghrist/) Youtube lectures, Strang OCW)
@@ -20,11 +23,14 @@ This is the repo for the book on review of basic electrical engineering principl
   - Feynman lecture
   - Griffith
   - Purcell
- 
+
 ### Working on Overleaf
 - This repo is linked to overleaf: `New Project` -> `Import from GitHub`
 - To keep the repo in sync: `Overleaf -> Menu -> Sync -> GitHub`
 - Create all the git clones from overleaf and sync it on overleaf with GitHub
+
+### Figures
+- Try https://github.com/pgf-tikz/pgf
 
 ## Documentation on the tufte-latex package.
 The following documention is from the tufte-latex's README.md
