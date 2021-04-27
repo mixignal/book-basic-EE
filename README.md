@@ -27,7 +27,7 @@ This is the repo for the book on review of basic electrical engineering principl
   - Calculus ([Robert Ghrist's](https://www2.math.upenn.edu/~ghrist/) Youtube lectures, Strang OCW)
   - Diff equations.
 - Electromagnetics
-  - Feynman lecture
+  - Feynman lectures: Vol-I 6: Probability, 22:Algebra,  25:Linear Systems, 50: Harmonics and Fourier series.
   - Griffith
   - Purcell
 
