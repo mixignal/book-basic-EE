@@ -32,6 +32,11 @@ This is the repo for the book on review of basic electrical engineering principl
   - Feynman lectures: Vol-I 6: Probability, 22:Algebra,  25:Linear Systems, 50: Harmonics and Fourier series.
   - Griffith
   - Purcell
+### Fonts
+- https://ctan.org/tex-archive/fonts/
+- https://www.fontsite.com (paid fonts)
+- [Loading custom fonts in overleaf](https://www.overleaf.com/learn/latex/Questions/I_have_a_custom_font_I'd_like_to_load_to_my_document._How_can_I_do_this%3F)
+- [Loading OpenType fonts in LaTeX](https://www.tug.org/TUGboat/tb27-2/tb87owens.pdf)
 
 ### Working on Overleaf
 - This repo is linked to overleaf: `New Project` -> `Import from GitHub`
