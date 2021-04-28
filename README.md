@@ -37,6 +37,20 @@ This is the repo for the book on review of basic electrical engineering principl
 - https://www.fontsite.com (paid fonts)
 - [Loading custom fonts in overleaf](https://www.overleaf.com/learn/latex/Questions/I_have_a_custom_font_I'd_like_to_load_to_my_document._How_can_I_do_this%3F)
 - [Loading OpenType fonts in LaTeX](https://www.tug.org/TUGboat/tb27-2/tb87owens.pdf)
+- Two utilities that can install Open Type fonts in TeX systems:
+  - [J Owens otfinst](https://www.ece.ucdavis.edu/~jowens/code/otfinst/), [His Technical Paper on TUG](https://www.tug.org/TUGboat/tb27-2/tb87owens.pdf), Code on [CTAN](http://www.ctan.org/tex-archive/fonts/utilities/otfinst/)
+  - Marc Penniga's [autoinst](https://ctan.org/tex-archive/fonts/utilities/fontools/)
+
+#### Installing LCDF Typetools (otftotfm, etc)
+- Install all the development tools , if you haven't
+- Install TeX if you haven't `apt install texlive-latex-base`
+- Install the `kpathsea` path search lib `apt install libkpathsea-dev`
+- `git clone https://github.com/kohler/lcdf-typetools`
+- cd to the `lcdf-typetools` and configure, make and install:
+  - `./bootstrap.sh` (only for github clones)
+  - `./configure`
+  - `sudo make`
+  - `sudo make install`
 
 ### Working on Overleaf
 - This repo is linked to overleaf: `New Project` -> `Import from GitHub`
