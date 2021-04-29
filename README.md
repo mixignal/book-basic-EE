@@ -10,6 +10,8 @@
 This is the repo for the book on review of basic electrical engineering principles mostly for Integrated Circuit & Electronic System designers. This book follows Tufte-style typesetting from Edward Tufte's books.  This repo is forked from the Tufte LaTeX package at https://github.com/Tufte-LaTeX/tufte-latex.
 
 ### Self-publish
+- Check out Edward Tufte Visual Display of Quantitative Information for details on self-publishing
+- Edward Tufte's [Beautiful Evidence chronicles](https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=000262&topic_id=1): writing, designing, publishing, consequences 
 - Review Edward Tufte's course from his handout.
 - Review some the of the books on typography and design from the Tufte's forum (see below)
 - Edward Tufte's [Book design thread](https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB) has some great stuff on typography and book design. A must checkout.
