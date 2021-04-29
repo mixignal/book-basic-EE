@@ -8,119 +8,24 @@
 
 %%
 % Book metadata
-\title{Papilio Blue\thanks{Thanks to Richard Feynman and     Edward Tufte}}
+\title{Papilio Blue\thanks{}}
 \author[Saroj Rout]{Saroj Rout}
 \publisher{MiXignal Press}
 
-%%
-% If they're installed, use Bergamo and Chantilly from www.fontsite.com.
-% They're clones of Bembo and Gill Sans, respectively.
-%\IfFileExists{bergamo.sty}{\usepackage[osf]{bergamo}}{}% Bembo
-%\IfFileExists{chantill.sty}{\usepackage{chantill}}{}% Gill Sans
-\usepackage{microtype}
-
-%%
-% For nicely typeset tabular material
-\usepackage{booktabs}
-
-%%
-% For graphics / images
-\usepackage{graphicx}
-\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
-\graphicspath{{graphics/}}
-
-% The fancyvrb package lets us customize the formatting of verbatim
-% environments.  We use a slightly smaller font.
-\usepackage{fancyvrb}
-\fvset{fontsize=\normalsize}
-
-%---PGFPLOTS---
-\usepackage{pgfplots}
-\pgfplotsset{width=2in,compat=1.9}
 %---CUSTOM STUFF -------
 \usepackage{book-custom}
+\usepackage{book-settings}
 
-% Generates the index
-\usepackage{makeidx}
-\makeindex
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% BEGIN DOCUMENT 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+% -- BEGIN DOCUMENT 
+%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+% ------  FRONT MATTER -----
+%\include{book-front}
 
-% ------------  FRONT MATTER ---
-\frontmatter
-
-% r.1 blank page
-%\blankpage
-
-% v.2 epigraphs
-\newpage\thispagestyle{empty}
-\openepigraph{%
-The butterfly counts not months but moments, and has time enough. 
-}{Rabindranath Tagore%, {\itshape Design, Form, and Chaos}
-}
-
-\vfill
-\openepigraph{%
-Out of clutter find simplicity.
-}{Albert Einstein}
-\vfill
-
-\openepigraph{%
-If you can't explain something to a first year student, then you haven't really understood.
-}{Richard P. Feynman}
-\vfill
-
-% r.3 full title page
-\maketitle
-
-
-% v.4 copyright page
-\newpage
-\begin{fullwidth}
-~\vfill
-\thispagestyle{empty}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{\baselineskip}
-Copyright \copyright\ \the\year\ \thanklessauthor
-
-\par\smallcaps{Published by \thanklesspublisher\\ Nashua, New Hampshire 03063}
-
-\par\smallcaps{mixignal.press}
-
-\par All rights to text and illustrations are reserved by Saroj Rout. This work may not be copied, reproduced, or translated in whole or in part without written permission of the publisher, except for brief excerpts in reviews or scholarly analysis. Use with {\it any} form of information storage and retrieval, electronic adaptation or whatever, computer software, or by similar or dissimilar methods now known or developed in the future is strictly forbidden without permission of the publisher and copyright holder.
-\index{copyright}
-
-\par\textit{First printing, \monthyear}
-\end{fullwidth}
-
-% r.5 contents
-%\tableofcontents
-
-%\listoffigures
-
-%\listoftables
-
-% r.7 dedication
-\cleardoublepage
-~\vfill
-\begin{doublespace}
-\noindent\fontsize{18}{22}\selectfont\itshape
-\nohyphenation
-Dedicated to my Parents.
-\end{doublespace}
-\vfill
-\vfill
-%%--------Chapter-1: Math
+%%--------CHAPTER-1: Math
 \include{content/chap-math}
-Testing fonts.
-\textit{This is italics.}
-\textbf{This is bold}
-\textsc{This is small caps}
-\texttt{This is typewriter}
-Oldstyle 1234\textln{12345}
+
 %%------------ Sample Chapter
 %\include{content/sample-chap}
 

@@ -3,25 +3,25 @@
 \chapter{Mathematics}
 \label{ch:math}
 
-\newthought{This chapter} reviews all the basic mathematics required for electrical engineering. 
+\newthought{This chapter} reviews all the basic mathematics required for electrical engineers, in particular, circuit designers. 
 %%
 % Start the main matter (normal chapters)
 %\mainmatter
 
-\section{Calculus}
+\section{Functions}
 %%% Figure: Function exp(x) 
-\begin{marginfigure}[-10\baselineskip]
+\begin{marginfigure}[-5\baselineskip]
   %\includegraphics[]{helix}
   \begin{tikzpicture}
-     \begin{axis}[axis lines = left, xlabel = $x$, ylabel = {$f(x)$}]
+     \begin{axis}[axis lines = left, xlabel = $x$, ylabel = {$f(x)=\exp{x}$}]
 %Below the red parabola is defined
      \addplot [domain=0:3, samples=100]{exp(x)};
-     %\addlegendentry{$x^2$}
+     %\addlegendentry{$f(x)=\exp(x)$}
      \end{axis}
   \end{tikzpicture}
-  \caption{Function $f(x)=\exp(x)$ as a graph.}
+  %\caption{Function $f(x)=\exp(x)$ as a graph.}
 \end{marginfigure}
-%%- Functions
-\paragraph{Functions} are the backbone of Calculus and is typically viewed in terms of their graphs of $x$ paired with $f(x)$. It can be viewed more generally as a {\it mechanism} of producing an output $f(x)$ for an {\it given} input $x$. With this mechanical view in mind, certain properties of functions can be defined more naturally. The {\it domain} of a function consists of all possible values of inputs and the {\it range} is all possible values of outputs. For single-variable calculus, the domain and ranges are going to be simple for example the real number line $R=(-\infty ~\infty)$ or certain sub-intervals of that $[a,b], [0, \infty], etc.$. 
+%%--- Functions
+Functions are the backbone of Calculus and is typically viewed in terms of their graphs of $x$ paired with $f(x)$. It can be viewed more generally as a {\it mechanism} of producing an output $f(x)$ for an {\it given} input $x$. With this mechanical view in mind, certain properties of functions can be defined more naturally. The {\it domain} of a function consists of all possible values of inputs and the {\it range} is all possible values of outputs. For single-variable calculus, the domain and ranges are going to be simple for example the real number line $R=(-\infty ~\infty)$ or certain sub-intervals of that $[a,b], [0, \infty], etc.$. 
 Certain operations on functions are critical, perhaps the most important being \textit{composition}, \textit{$f$ composed with $g$}, which takes it's input as $x$ and produces the output $(f\cdot g)(x)=f(g(x))$ which can be visualized as a chain operation, with proper order.
-\marginnote[-2\baselineskip]{$\sqrt{(x^2+y^2)/2}$ can be decomposed to $g(x)=(x^2+y^2)/2$ and $f(x)=\sqrt{\cdot}$}
+\marginnote[-2\baselineskip]{$\sqrt{(x^2+y^2)/2}$ can be decomposed to $(f\cdot g)(x)$ where, $g(x)=(x^2+y^2)/2$ and $f(x)=\sqrt{\cdot}$}
