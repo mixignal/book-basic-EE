@@ -97,6 +97,8 @@ Used the AWS Ubuntu instance to convert the files from OTF to TeX and put the di
 
 ### Figures
 - Try https://github.com/pgf-tikz/pgf
+- [PGF Plots](https://www.overleaf.com/learn/latex/Pgfplots_package)
+- [CircuiTiKZ](https://www.overleaf.com/learn/latex/CircuiTikz_package)
 
 ## Documentation on the tufte-latex package.
 The following documention is from the tufte-latex's README.md

@@ -17,8 +17,6 @@
 % They're clones of Bembo and Gill Sans, respectively.
 %\IfFileExists{bergamo.sty}{\usepackage[osf]{bergamo}}{}% Bembo
 %\IfFileExists{chantill.sty}{\usepackage{chantill}}{}% Gill Sans
-%\usepackage{texmf/tex/latex/BergamoPro/BergamoPro}
-%\usepackage{texmf/tex/latex/Chantilly/Chantilly}
 \usepackage{microtype}
 
 %%
@@ -36,7 +34,10 @@
 \usepackage{fancyvrb}
 \fvset{fontsize=\normalsize}
 
-%------------------CUSTOM STUFF ----------------------
+%---PGFPLOTS---
+\usepackage{pgfplots}
+\pgfplotsset{width=2in,compat=1.9}
+%---CUSTOM STUFF -------
 \usepackage{book-custom}
 
 % Generates the index
