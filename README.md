@@ -32,16 +32,43 @@ This is the repo for the book on review of basic electrical engineering principl
   - Feynman lectures: Vol-I 6: Probability, 22:Algebra,  25:Linear Systems, 50: Harmonics and Fourier series.
   - Griffith
   - Purcell
+
 ### Fonts
+The Tufte books use Bembo for text and Gill Sans for Title etc. The clones of these fonts which are cheaper from fontsite.com are Bergamo (BergamoPro) and Chantilly. Bought this OTF fonts and converted them to LaTeX but still can't get to work. So on hold. 
+The default now is Palatino and Helevetica instead which are not bad so sticking with it for now till I figure out how to install the fonts completely.
+
 - https://ctan.org/tex-archive/fonts/
 - https://www.fontsite.com (paid fonts)
-- [Loading custom fonts in overleaf](https://www.overleaf.com/learn/latex/Questions/I_have_a_custom_font_I'd_like_to_load_to_my_document._How_can_I_do_this%3F)
-- [Loading OpenType fonts in LaTeX](https://www.tug.org/TUGboat/tb27-2/tb87owens.pdf)
+- [Loading custom fonts in overleaf](https://www.overleaf.com/learn/latex/Questions/I_have_a_custom_font_I'd_like_to_load_to_my_document._How_can_I_do_this%3F). After creating latexmrc, there is an error while compiling so not using this method.
+- [Loading OpenType fonts in LaTeX](https://www.tug.org/TUGboat/tb27-2/tb87owens.pdf) : Mostly following this document to convert and install the Open Type fonts.
 - Two utilities that can install Open Type fonts in TeX systems:
   - [J Owens otfinst](https://www.ece.ucdavis.edu/~jowens/code/otfinst/), [His Technical Paper on TUG](https://www.tug.org/TUGboat/tb27-2/tb87owens.pdf), Code on [CTAN](http://www.ctan.org/tex-archive/fonts/utilities/otfinst/)
-  - Marc Penniga's [autoinst](https://ctan.org/tex-archive/fonts/utilities/fontools/)
+  - Marc Penniga's [autoinst](https://ctan.org/tex-archive/fonts/utilities/fontools/)-- [manpage](https://manpages.debian.org/buster/texlive-font-utils/autoinst.1.en.html)
+- Both of these are wrappers on top of `otftotfm` to simplify the process.
+- Ended up using Marc's `autoinst` because Owen's script has a bug where the required version for `otfinfo` is higher than the latest version.
+- The basic steps of converting and installing the fonts are:
+  - For all the fonts and the attributes within them, install the _font metric_ and _encoding files_
+  - For all fonts generate and install the description file `.fd` which maps select commands to font files.
+  - Finally generate `.sty` files for users to use it in their code.
+- Open Type Fonts contain the font data in either of the two types:
+  - Adobe PS Type 1 or
+  - True Type
+- TeX requires the following files:
+  - TFM : contains all the dimensions
+  - PFB : Adobe PS Type-1 procedures that describe the shape of each chracter
+  - VF : virtual mapping between TFm and PFB
+  - ENC : specifies the encoding OT1, LY1, etc.
+  - MAP : maps all the above files
+- Use `otfinfo` to find all the properties of the fonts. The important ones are:
+  - `kern` and `ligature`
+  - numerals `old style` or `lining`
+  - small caps with the option `smcp`
 
-#### Installing LCDF Typetools (otftotfm, etc)
+#### Installing the fonts in the AWS Ubuntu in the overleaf directory
+Used the AWS Ubuntu instance to convert the files from OTF to TeX and put the directory structure in the overleaf project directory and used `\usepackage{PATH-TO-STY-FILE}`. The text fonts got changed to BergamoPro but could not use any of the different types eg. bold, italics, etc. Probably have to use an option but giving up for now. 
+
+** Installing the LCDF tools (otftotfm, etc.) **
+  
 - Install all the development tools , if you haven't
 - Install TeX if you haven't `apt install texlive-latex-base`
 - Install the `kpathsea` path search lib `apt install libkpathsea-dev`
@@ -51,6 +78,17 @@ This is the repo for the book on review of basic electrical engineering principl
   - `./configure`
   - `sudo make`
   - `sudo make install`
+
+** Installing autoinst and converting the OTF files **
+- Downloaded the `autoinst` zip file from [CTAN](https://ctan.org/tex-archive/fonts/utilities/fontools/)
+- Unzipped in ~/src/fontools
+- Moved the content of `share` to the TeX share `/usr/share/texmf/fonts/enc/dvips/fontools`
+- Added the `bin` directory to `$PATH` 
+- To convert, simply ran `autoinst BergamoPro/* Chantilly/*`
+- It created the entire directory sturcture under default directory `autoinst_output`
+- Moved this driectory to the overleaf project directory
+- Called the fonts using `\usepackage` but not fully working. Will look at it later.
+
 
 ### Working on Overleaf
 - This repo is linked to overleaf: `New Project` -> `Import from GitHub`

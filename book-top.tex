@@ -17,8 +17,9 @@
 % They're clones of Bembo and Gill Sans, respectively.
 %\IfFileExists{bergamo.sty}{\usepackage[osf]{bergamo}}{}% Bembo
 %\IfFileExists{chantill.sty}{\usepackage{chantill}}{}% Gill Sans
-
-%\usepackage{microtype}
+%\usepackage{texmf/tex/latex/BergamoPro/BergamoPro}
+%\usepackage{texmf/tex/latex/Chantilly/Chantilly}
+\usepackage{microtype}
 
 %%
 % For nicely typeset tabular material
@@ -113,16 +114,21 @@ Dedicated to my Parents.
 \vfill
 %%--------Chapter-1: Math
 \include{content/chap-math}
-
+Testing fonts.
+\textit{This is italics.}
+\textbf{This is bold}
+\textsc{This is small caps}
+\texttt{This is typewriter}
+Oldstyle 1234\textln{12345}
 %%------------ Sample Chapter
 %\include{content/sample-chap}
 
 %%
 % The back matter contains appendices, bibliographies, indices, glossaries, etc.
-\backmatter
+%\backmatter
 
-\bibliography{sample-handout}
-\bibliographystyle{plainnat}
+%\bibliography{sample-handout}
+%\bibliographystyle{plainnat}
 
 
 %\printindex
