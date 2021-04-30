@@ -1,0 +1,21 @@
+%---- MATH -> Functions
+\section{Functions}
+%%% Figure: Function exp(x) 
+\begin{marginfigure}[-5\baselineskip]
+  %\includegraphics[]{helix}
+  \begin{tikzpicture}
+     \begin{axis}[axis lines = left, xlabel = $x$, ylabel = {$f(x)=\exp{(x)}$}]
+%Below the red parabola is defined
+     \addplot [domain=0:3, samples=100]{exp(x)};
+     %\addlegendentry{$f(x)=\exp(x)$}
+     \end{axis}
+  \end{tikzpicture}
+  %\caption{Function as a graph.}
+\end{marginfigure}
+%%--- Functions
+Functions are the backbone of calculus and is typically viewed in terms of their graphs of $x$ paired with $f(x)$. It can be viewed more generally as a {\it mechanism} of producing an output $f(x)$ for an {\it given} input $x$. With this mechanical view in mind, certain properties of functions can be defined more naturally. The {\it domain} of a function consists of all possible values of inputs and the {\it range} is all possible values of outputs. For single-variable calculus, the domain and ranges are going to be simple for example the real number line $R=(-\infty ~\infty)$ or certain sub-intervals of that $[a,b], [0, \infty], etc.$. 
+Certain operations on functions are critical, perhaps the most important being \textit{composition}, \textit{$f$ composed with $g$}, which takes it's input as $x$ and produces the output $(f\cdot g)(x)=f(g(x))$ which can be visualized as a chain operation, with proper order.
+\marginnote[-2\baselineskip]{$\sqrt{x^2+2}$ can be decomposed to $(f\cdot g)(x)$ where, $g(x)=x^2+2$ and $f(x)=\sqrt{x}$}
+%
+\marginnote[\baselineskip]{Note, $f^{-1}(x) \neq 1/f(x)$}
+Another important operation of functions is that of \textit{inverse} of a function which takes it's input as $x$ and produces an output $f^{-1}(x)$ such that, when the output is fed to the input of the function $f(x)$ it's output is $x$. In other words, $f^{-1}(x)$ \textit{undoes} whatever $f(x)$ \textit{does}.

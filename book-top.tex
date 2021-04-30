@@ -1,42 +1,33 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ------- PAPILIO BLUE ---------
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass{tufte-book}
+%---All Package declarations, custom commands, etc. in this preamble
+\usepackage{book-preamble}
 
-% uncomment this line if you prefer colored hyperlinks (e.g., for onscreen viewing)
-%\hypersetup{colorlinks}
-
-%%
 % Book metadata
 \title{Papilio Blue\thanks{}}
 \author[Saroj Rout]{Saroj Rout}
 \publisher{MiXignal Press}
-
-%---CUSTOM STUFF -------
-\usepackage{book-custom}
-\usepackage{book-settings}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 % -- BEGIN DOCUMENT 
 %%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 % ------  FRONT MATTER -----
-%\include{book-front}
+%\input{content/book-front}
 
 %%--------CHAPTER-1: Math
-\include{content/chap-math}
+\input{content/chap-math}
 
 %%------------ Sample Chapter
 %\include{content/sample-chap}
 
-%%
-% The back matter contains appendices, bibliographies, indices, glossaries, etc.
+% -- appendices, bibliographies, indices, etc.
 %\backmatter
 
 %\bibliography{sample-handout}
 %\bibliographystyle{plainnat}
-
-
 %\printindex
 
 \end{document}

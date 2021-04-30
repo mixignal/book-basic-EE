@@ -30,10 +30,23 @@ This is the repo for the book on review of basic electrical engineering principl
   - Linear Algebra (Strang, UPenn lecture)
   - Calculus ([Robert Ghrist's](https://www2.math.upenn.edu/~ghrist/) Youtube lectures, Strang OCW)
   - Diff equations.
+  - Random numbers and statistics
 - Electromagnetics
   - Feynman lectures: Vol-I 6: Probability, 22:Algebra,  25:Linear Systems, 50: Harmonics and Fourier series.
   - Griffith
   - Purcell
+- Presenting Data (Edward Tufte)
+
+### Working on Overleaf
+- This repo is linked to overleaf: `New Project` -> `Import from GitHub`
+- To keep the repo in sync: `Overleaf -> Menu -> Sync -> GitHub`
+- Create all the git clones from overleaf and sync it on overleaf with GitHub
+- [Managing Large projects](https://www.overleaf.com/learn/latex/Management_in_a_large_project)
+
+### Figures
+- Try https://github.com/pgf-tikz/pgf
+- [PGF Plots](https://www.overleaf.com/learn/latex/Pgfplots_package)
+- [CircuiTiKZ](https://www.overleaf.com/learn/latex/CircuiTikz_package)
 
 ### Fonts
 The Tufte books use Bembo for text and Gill Sans for Title etc. The clones of these fonts which are cheaper from fontsite.com are Bergamo (BergamoPro) and Chantilly. Bought this OTF fonts and converted them to LaTeX but still can't get to work. So on hold. 
@@ -92,15 +105,6 @@ Used the AWS Ubuntu instance to convert the files from OTF to TeX and put the di
 - Called the fonts using `\usepackage` but not fully working. Will look at it later.
 
 
-### Working on Overleaf
-- This repo is linked to overleaf: `New Project` -> `Import from GitHub`
-- To keep the repo in sync: `Overleaf -> Menu -> Sync -> GitHub`
-- Create all the git clones from overleaf and sync it on overleaf with GitHub
-
-### Figures
-- Try https://github.com/pgf-tikz/pgf
-- [PGF Plots](https://www.overleaf.com/learn/latex/Pgfplots_package)
-- [CircuiTiKZ](https://www.overleaf.com/learn/latex/CircuiTikz_package)
 
 ## Documentation on the tufte-latex package.
 The following documention is from the tufte-latex's README.md
