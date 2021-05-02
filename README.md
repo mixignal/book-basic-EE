@@ -17,6 +17,7 @@ This is the repo for the book on review of basic electrical engineering principl
 - Edward Tufte's [Book design thread](https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB) has some great stuff on typography and book design. A must checkout.
 - [Ask ET Forum](https://www.edwardtufte.com/bboard/) is the general forum with all questions.
 - Robert Ghirst on [self-publishing on Amazon](https://www2.math.upenn.edu/~ghrist/whyselfpublish.html) is a must read as well.
+- Checkout Memoir LaTeX class. Mostly for fiction and Math books.
 
 ### content scratch.
 - Math

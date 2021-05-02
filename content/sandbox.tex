@@ -1,0 +1,14 @@
+\chapter{Sandbox}
+This is inline tikz graphics \tikz \draw (0pt,0pt) -- (20pt,6pt); and continue text after this.
+
+
+\begin{tikzpicture}
+  \draw (-1.5,0) -- (1.5,0);
+  \draw (0,-1.5) -- (0,1.5);
+  %\draw (-1,0) .. controls (-1,1) and (1,1) .. (1,0);
+  \draw (0,0) circle [radius=10pt];
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \draw (0,0) .. controls (1,1) and (2,1) .. (2,0);
+\end{tikzpicture}

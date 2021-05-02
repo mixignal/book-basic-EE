@@ -1,7 +1,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ------- PAPILIO BLUE ---------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass{tufte-book}
+%% tufte-book options:
+%% b5paper, a4paper: default is US letter
+%%     Use \geometry pacakge for custom paper size
+%% sfsidetnotes: SansSerif fonts for sidenotes
+%% twoside: will print header material on outside
+%% symmetric: typesets the margin material on outside
+%% justified: justifies right instead of default ragged-right
+%% bidi : For bidirectinal font in XeLaTeX
+%% debug: outputs debug info into the log file.
+%% nofonts: for loading your own fonts.
+%% nols: inhibts letterspacing codes.
+%% notitlepage: generates title block instead of titlepage
+%% notoc: suppresses tufte-latex TOC and reverts to
+%%        LaTeX TOC which shows subsections
+%% nohyper: prevents loading hyperref package which stores all metadata eg. titel, author, etc.
+\documentclass[symmetric]{tufte-book}
+
 %---All Package declarations, custom commands, etc. in this preamble
 \usepackage{book-preamble}
 
@@ -19,7 +35,7 @@
 
 %%--------CHAPTER-1: Math
 \input{content/chap-math}
-
+\input{content/sandbox}
 %%------------ Sample Chapter
 %\include{content/sample-chap}
 
